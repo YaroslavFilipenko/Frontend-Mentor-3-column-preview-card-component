@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.wrapper {
+    display: flex;
+    width: 921px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 307px;
+    padding: 50px;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-info {
+    width: 210px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+}
+
+.card:nth-child(1),
+.card:nth-child(1) .card-button {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2),
+.card:nth-child(2) .card-button {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3),
+.card:nth-child(3) .card-button {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%) !important;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+}
+
+.card:nth-child(1) .card-button:hover,
+.card:nth-child(2) .card-button:hover,
+.card:nth-child(3) .card-button:hover {
+    background-color: transparent !important;
+    color: hsl(0, 0%, 95%);
+    transition: .5s ease;
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0;
+        width: 330px;
+        height: 1326px;
+    }
+    .card {
+        width: 330px;
+        height: 442px;
+    }
+}
